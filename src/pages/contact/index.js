@@ -83,9 +83,8 @@ export const ContactUs = () => {
             <Alert
               //show={formData.show}
               variant={formData.variant}
-              className={`rounded-0 co_alert ${
-                formData.show ? "d-block" : "d-none"
-              }`}
+              className={`rounded-0 co_alert ${formData.show ? "d-block" : "d-none"
+                }`}
               onClose={() => setFormdata({ show: false })}
               dismissible
             >
@@ -131,16 +130,40 @@ export const ContactUs = () => {
                   />
                 </Col>
               </Row>
-              <textarea
-                className="form-control rounded-0"
-                id="message"
-                name="message"
-                placeholder="Message"
-                rows="5"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              ></textarea>
+              <Col lg="12" className="form-group">
+                <input
+                  className="form-control rounded-0"
+                  id="email"
+                  name="message"
+                  placeholder="Message"
+              
+                 value={formData.message}
+                  required
+                  onChange={handleChange}
+                  // id="message"
+                  // name="message"
+                  // placeholder="Message"
+                  // rows="5"
+                  // value={formData.message}
+                  // onChange={handleChange}
+                  // required
+                />
+              </Col>
+              {/* <Row>
+                <Col lg="12" className="form-group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Message"
+                    rows="5"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                  ></textarea>
+                </Col>
+
+              </Row> */}
+
               <br />
               <Row>
                 <Col lg="12" className="form-group">
