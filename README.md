@@ -33,3 +33,11 @@ Modify pages content in  `src/content_option.js`.
 ### Thanks!
 
 Like the page? Leave a ⭐! 
+## Tasks Needed to be Done
+
+- [ ] Project Uploaded to my domain
+- [ ] Replace Image
+- [ ] Check the Responsiveness of the Website
+- [ ] About Me Skills Review
+- [ ] Update Images in the Portfolio
+- [ ] Add Link to the Google Play Store

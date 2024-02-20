@@ -5,6 +5,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../content_option";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
+import { Link } from "react-router-dom";
 
 export const ContactUs = () => {
   const [formData, setFormdata] = useState({
@@ -72,6 +73,32 @@ export const ContactUs = () => {
           <title>{meta.title} | Contact</title>
           <meta name="description" content={meta.description} />
         </Helmet>
+        <div className="intro_btn-action pb-5">
+                  <Link to="/" className="text_2">
+                    <div id="button_h" className="ac_btn btn ">
+                      Home
+                      <div className="ring one"></div>
+                      <div className="ring two"></div>
+                      <div className="ring three"></div>
+                    </div>
+                  </Link>
+                  <Link to="/about">
+                    <div id="button_h" className="ac_btn btn">
+                      About Me
+                      <div className="ring one"></div>
+                      <div className="ring two"></div>
+                      <div className="ring three"></div>
+                    </div>
+                  </Link>
+                  <Link to="/portfolio" className="text_2">
+                    <div id="button_h" className="ac_btn btn ">
+                      Projects
+                      <div className="ring one"></div>
+                      <div className="ring two"></div>
+                      <div className="ring three"></div>
+                    </div>
+                  </Link>
+                </div>
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
             <h1 className="display-4 mb-4">Contact Me</h1>

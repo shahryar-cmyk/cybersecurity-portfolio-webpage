@@ -2,12 +2,8 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Row, Col, Card, Container } from "react-bootstrap";
-import {
-  dataabout,
-  meta,
-  worktimeline,
-  skills,
-} from "../../content_option";
+import { dataabout, meta, worktimeline, skills } from "../../content_option";
+import { Link } from "react-router-dom";
 
 export const About = () => {
   return (
@@ -18,6 +14,32 @@ export const About = () => {
           <title> About | {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
+        <div className="intro_btn-action pb-5">
+          <Link to="/" className="text_2">
+            <div id="button_h" className="ac_btn btn ">
+              Home
+              <div className="ring one"></div>
+              <div className="ring two"></div>
+              <div className="ring three"></div>
+            </div>
+          </Link>
+          <Link to="/portfolio" className="text_2">
+            <div id="button_h" className="ac_btn btn ">
+              Projects
+              <div className="ring one"></div>
+              <div className="ring two"></div>
+              <div className="ring three"></div>
+            </div>
+          </Link>
+          <Link to="/contact">
+            <div id="button_h" className="ac_btn btn">
+              Contact Me
+              <div className="ring one"></div>
+              <div className="ring two"></div>
+              <div className="ring three"></div>
+            </div>
+          </Link>
+        </div>
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
             <h1 className="display-4 mb-4">About me</h1>
